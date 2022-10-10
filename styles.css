@@ -1,0 +1,136 @@
+body{
+    background-color: lightsteelblue;
+     font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    
+   
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.botones button{
+   background-color: hsl(183, 100%, 15%);
+   font-family: 'Space Mono', monospace;
+   font-weight: 700;
+   color: hsl(0, 0%, 100%);
+   margin-right: 10px;
+   margin-bottom: 10px;
+   padding: 7px 14px;
+   width: 100px;
+}
+.botones button:active{
+    background-color:hsl(172, 67%, 45%) ;
+    color:  hsl(183, 100%, 15%);
+}
+
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    background: white;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.section-1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+    color: hsl(183, 100%, 15%);
+}
+.section-1 input{
+    padding: 7px 14px;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+}
+.number{
+    margin-top: 15px;
+}
+
+.section-2{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 18px;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+}
+.section-2 span{
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    align-self: center;
+    margin-left: 40px;
+}
+.section-2 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.section-2 h3{
+    font-size: 16px;
+    width: 25%;
+}
+.section-2 button{
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    padding: 7px 14px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+
+
+
+/* Media queriessss */
+@media screen and (max-width: 480px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        
+      }
+      .section-1 input{
+       width: 200px;
+       margin: 0 auto;        
+      }
+      .section-1 label{
+        font-size: 14px;
+      }
+
+      .botones{
+        width: 100%;
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+   .number{
+    font-size: 14px;
+   }
+    .section-2{
+        width: 80%;
+    }
+    .section-2 h3{
+        font-size: 14px;
+        width: 30%;
+    }
+}

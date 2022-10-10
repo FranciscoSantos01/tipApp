@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Tip app Calculator</title>
+</head>
+<body>
+<h1>
+    <img src="./images/logo.svg" alt="lOGO">
+</h1>
+<section class="section">
+    <div class="section-1">
+        <label for="text">Bill</label>
+        <input type="number" placeholder="$ 0" id="input-bill">
+        <h4>Select tip%</h4>
+        <div class="botones">
+            <button class="btn" value="5">5%</button>
+            <button class="btn" value="10">10%</button>
+            <button class="btn" value="15">15%</button>
+            <button class="btn" value="25">25%</button>
+            <button class="btn" value="50">50%</button>
+            <button id="btn-custom" contenteditable="true" value="custom">Custom</button>
+        </div>
+        <label for="" class="number">Number Of People</label>
+        <input type="number" name="Number" value="0" id="numberP" placeholder="0">
+    </div>
+    <div class="section-2">
+        <div>
+            <h3>Tip Amount per persona</h3>
+            <span ><img src="./images/icon-dollar.svg" alt="dollar"><strong id="dollar">0.00</strong></span>
+        </div>
+        <div>
+            <h3>Total per persona</h3>
+            <span ><img src="./images/icon-dollar.svg" alt="dollar"><strong id="dollar1">0.00</strong></span>
+        </div>
+        <button id="reset">Reset</button>
+    </div>
+</section>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
